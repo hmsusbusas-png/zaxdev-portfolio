@@ -575,3 +575,142 @@ section {
     radial-gradient(circle at 30% 75%, rgba(90, 160, 255, .1), transparent 55%),
     #0e1013;
 }
+
+/* ─── обо мне ─── */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1.25fr .75fr;
+  gap: clamp(40px, 6vw, 90px);
+  align-items: start;
+}
+
+.about-title {
+  font-size: clamp(1.7rem, 3.4vw, 2.4rem);
+  margin-bottom: 26px;
+  max-width: 16ch;
+}
+
+.about-text {
+  color: var(--muted);
+  font-size: 16px;
+  margin-bottom: 18px;
+  max-width: 58ch;
+}
+
+.about-timeline {
+  border-left: 1px solid var(--border);
+  padding-left: clamp(24px, 3vw, 40px);
+  margin-top: 14px;
+}
+
+.tl-row {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  gap: 18px;
+  align-items: baseline;
+}
+
+.tl-row:last-child {
+  border-bottom: none;
+}
+
+.tl-year {
+  font-family: 'Unbounded', sans-serif;
+  font-size: 15px;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.tl-what {
+  font-size: 14.5px;
+  color: var(--muted);
+}
+
+/* ─── контакты ─── */
+
+.contact {
+  padding-bottom: 96px;
+}
+
+.contact-inner {
+  text-align: center;
+  max-width: 640px;
+}
+
+.contact-title {
+  font-size: clamp(2.2rem, 5.4vw, 3.6rem);
+  margin-bottom: 20px;
+}
+
+.contact-sub {
+  color: var(--muted);
+  margin-bottom: 36px;
+}
+
+.contact-actions {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 20px;
+  position: relative;
+}
+
+.btn-big {
+  font-size: 17px;
+  padding: 17px 34px;
+  border-radius: 15px;
+}
+
+.contact-arrow {
+  color: var(--accent);
+  transform: rotate(-14deg) translateY(-6px);
+}
+
+/* ─── футер ─── */
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 34px 0 30px;
+  overflow: hidden;
+}
+
+.footer-wordmark {
+  font-family: 'Unbounded', sans-serif;
+  font-weight: 700;
+  font-size: clamp(4rem, 15vw, 11rem);
+  line-height: .95;
+  text-align: center;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, .07);
+  user-select: none;
+  margin-bottom: 26px;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  flex-wrap: wrap;
+  font-size: 13.5px;
+  color: var(--muted);
+}
+
+.footer-links {
+  display: flex;
+  gap: 22px;
+}
+
+.footer-links a {
+  background-image: linear-gradient(currentColor, currentColor);
+  background-size: 0% 1px;
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  padding-bottom: 2px;
+  transition: background-size .3s cubic-bezier(.4, 0, .2, 1);
+}
+
+.footer-links a:hover {
+  background-size: 100% 1px;
+}
