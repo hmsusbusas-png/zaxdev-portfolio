@@ -714,3 +714,131 @@ section {
 .footer-links a:hover {
   background-size: 100% 1px;
 }
+
+/* ─── появление при скролле ─── */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(24px);
+  transition: opacity .65s cubic-bezier(.22, 1, .36, 1), transform .65s cubic-bezier(.22, 1, .36, 1);
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* ─── адаптив ─── */
+
+@media (max-width: 960px) {
+  .hero {
+    padding-top: 150px;
+    min-height: 0;
+  }
+
+  .hero-grid {
+    grid-template-columns: 1fr;
+    align-items: start;
+  }
+
+  .hero-meta {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid var(--border);
+    padding-top: 10px;
+  }
+
+  .meta-row {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    gap: 16px;
+  }
+
+  .hero-arrow {
+    display: none;
+  }
+
+  .span-7, .span-5 {
+    grid-column: span 12;
+  }
+
+  .project-row,
+  .project-row.row-reverse {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .project-row.row-reverse .project-info {
+    order: 1;
+  }
+
+  .project-row.row-reverse .project-visual {
+    order: 2;
+  }
+
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-timeline {
+    border-left: none;
+    padding-left: 0;
+    border-top: 1px solid var(--border);
+    padding-top: 10px;
+  }
+}
+
+@media (max-width: 640px) {
+  .nav-links {
+    display: none;
+  }
+
+  .nav-cta {
+    margin-left: auto;
+  }
+
+  .hero h1 {
+    font-size: clamp(2.1rem, 9vw, 2.6rem);
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+    justify-content: center;
+  }
+
+  section {
+    padding: 84px 0 64px;
+  }
+
+  .section-head {
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 36px;
+  }
+
+  .bento-card {
+    padding: 24px 22px 20px;
+  }
+
+  .contact-actions {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-arrow {
+    display: none;
+  }
+}
