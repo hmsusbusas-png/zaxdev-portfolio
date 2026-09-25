@@ -799,6 +799,19 @@ section {
     border-top: 1px solid var(--border);
     padding-top: 10px;
   }
+
+  /* на планшете шапка плотнее — ссылки и кнопка не наезжают на узких ширинах */
+  .nav-inner {
+    gap: 20px;
+  }
+
+  .nav-links {
+    gap: 18px;
+  }
+
+  .nav-cta {
+    padding: 9px 14px;
+  }
 }
 
 @media (max-width: 640px) {
@@ -808,6 +821,11 @@ section {
 
   .nav-cta {
     margin-left: auto;
+    padding: 12px 18px;
+  }
+
+  .hero {
+    padding-top: 128px;
   }
 
   .hero h1 {
@@ -820,7 +838,7 @@ section {
   }
 
   section {
-    padding: 84px 0 64px;
+    padding: 72px 0 56px;
   }
 
   .section-head {
@@ -840,5 +858,20 @@ section {
 
   .contact-arrow {
     display: none;
+  }
+
+  /* ссылка на проект — полноценная зона нажатия */
+  .project-link {
+    padding: 10px 0;
+  }
+
+  /* микролейбл не ниже 12px на маленьком экране */
+  .meta-label {
+    font-size: 12px;
+  }
+
+  /* вордмарк не должен обрезаться по краям экрана */
+  .footer-wordmark {
+    font-size: clamp(2.6rem, 14.5vw, 4rem);
   }
 }
