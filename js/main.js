@@ -22,13 +22,42 @@ window.addEventListener('scroll', () => {
   const y = window.scrollY;
   nav.classList.toggle('scrolled', y > 30);
 
-  if (y > 300 && y > lastScroll) {
+  // при открытом мобильном меню шапку не прячем
+  if (y > 300 && y > lastScroll && !nav.classList.contains('open')) {
     nav.classList.add('hidden');
   } else {
     nav.classList.remove('hidden');
   }
   lastScroll = y;
 }, { passive: true });
+
+// ─── мобильное меню ───
+const burger = document.getElementById('nav-burger');
+
+if (burger) {
+  const setMenu = (open) => {
+    nav.classList.toggle('open', open);
+    burger.setAttribute('aria-expanded', String(open));
+    burger.setAttribute('aria-label', open ? 'Закрыть меню' : 'Открыть меню');
+  };
+
+  burger.addEventListener('click', () => {
+    setMenu(!nav.classList.contains('open'));
+  });
+
+  // Escape закрывает меню и возвращает фокус на кнопку
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && nav.classList.contains('open')) {
+      setMenu(false);
+      burger.focus();
+    }
+  });
+
+  // клик по ссылке в меню закрывает его
+  nav.querySelectorAll('.nav-links a').forEach((link) => {
+    link.addEventListener('click', () => setMenu(false));
+  });
+}
 
 // ─── прожектор за курсором на карточках услуг ───
 document.querySelectorAll('.bento-card').forEach(card => {
