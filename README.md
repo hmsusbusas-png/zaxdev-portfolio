@@ -8,7 +8,7 @@ One-page portfolio site: dark theme, glassmorphism, no frameworks, no builders. 
 
 - **Hero** — asymmetric layout with status chip, quick facts column and a services marquee
 - **Services** — bento grid with cursor spotlight effect
-- **Projects** — alternating rows with outlined index numbers
+- **Projects** — four alternating rows with outlined index numbers plus a compact grid with the rest of the projects
 - **About** — short story + timeline
 - **Contact** — CTA with a hand-drawn arrow, magnetic button
 
@@ -29,8 +29,8 @@ python -m http.server 8000
 
 ```
 ├── index.html      # markup, all sections
-├── css/style.css   # styles (~600 lines, plain CSS, no preprocessor)
-├── js/main.js      # animations, ~70 lines, no dependencies
+├── css/style.css   # styles, plain CSS, no preprocessor
+├── js/main.js      # animations, no dependencies
 └── favicon.svg
 ```
 
