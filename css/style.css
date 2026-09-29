@@ -1,4 +1,3 @@
-/* zaxdev portfolio — руками, без конструкторов */
 
 *,
 *::before,
@@ -34,7 +33,6 @@ body {
   overflow-x: hidden;
 }
 
-/* лёгкое зерно поверх всего — убирает пластиковость */
 body::after {
   content: '';
   position: fixed;
@@ -77,7 +75,7 @@ body::after {
 h1, h2, h3 {
   font-family: 'Unbounded', sans-serif;
   font-weight: 600;
-  line-height: 1.2; /* выносные буквы У, б, д не режутся */
+  line-height: 1.2;
   letter-spacing: -0.02em;
 }
 
@@ -97,8 +95,6 @@ img {
   background-clip: text;
   color: transparent;
 }
-
-/* ─── доступность ─── */
 
 :focus-visible {
   outline: 2px solid var(--accent);
@@ -122,8 +118,6 @@ img {
 .skip-link:focus {
   top: 12px;
 }
-
-/* ─── навигация ─── */
 
 .nav {
   position: fixed;
@@ -196,7 +190,6 @@ img {
   background: var(--surface);
 }
 
-/* бургер: скрыт на десктопе, показывается на мобильных */
 .nav-burger {
   display: none;
   flex-direction: column;
@@ -223,8 +216,6 @@ img {
 .nav.open .burger-line:nth-child(1) { transform: translateY(3.5px) rotate(45deg); }
 .nav.open .burger-line:nth-child(2) { transform: translateY(-3.5px) rotate(-45deg); }
 
-/* ─── hero ─── */
-
 .hero {
   padding: 188px 0 96px;
   min-height: 88vh;
@@ -233,7 +224,6 @@ img {
   position: relative;
 }
 
-/* мягкое тёплое свечение за hero */
 .hero::before {
   content: '';
   position: absolute;
@@ -374,8 +364,6 @@ img {
   color: var(--text);
 }
 
-/* ─── бегущая строка ─── */
-
 .marquee {
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -387,10 +375,6 @@ img {
   display: flex;
   width: max-content;
   animation: marquee 26s linear infinite;
-}
-
-.marquee:hover .marquee-track {
-  animation-play-state: paused;
 }
 
 .marquee-track span {
@@ -405,8 +389,6 @@ img {
 @keyframes marquee {
   to { transform: translateX(-50%); }
 }
-
-/* ─── секции: общее ─── */
 
 section {
   padding: 118px 0 88px;
@@ -431,8 +413,6 @@ section {
   font-size: clamp(1.7rem, 3.4vw, 2.5rem);
 }
 
-/* ─── услуги: bento ─── */
-
 .bento {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
@@ -451,7 +431,6 @@ section {
   overflow: hidden;
 }
 
-/* курсор-прожектор, координаты ставит js */
 .bento-card::before {
   content: '';
   position: absolute;
@@ -511,8 +490,6 @@ section {
   color: var(--accent);
 }
 
-/* ─── проекты ─── */
-
 .project-row {
   display: grid;
   grid-template-columns: 1.15fr .85fr;
@@ -533,9 +510,8 @@ section {
 .project-idx {
   font-family: 'Unbounded', sans-serif;
   font-size: clamp(2.6rem, 5vw, 3.8rem);
-  font-weight: 700;
-  color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, .13);
+  font-weight: 600;
+  color: var(--accent);
   display: block;
   margin-bottom: 14px;
 }
@@ -606,7 +582,6 @@ section {
   transition: transform .3s cubic-bezier(.4, 0, .2, 1), border-color .3s ease, filter .3s ease, color .3s ease;
 }
 
-/* живые скриншоты проектов вместо текстовых заглушек */
 .project-visual img {
   width: 100%;
   height: 100%;
@@ -646,8 +621,6 @@ section {
     radial-gradient(circle at 30% 75%, rgba(90, 160, 255, .1), transparent 55%),
     #0e1013;
 }
-
-/* ─── обо мне ─── */
 
 .about-grid {
   display: grid;
@@ -699,8 +672,6 @@ section {
   color: var(--muted);
 }
 
-/* ─── контакты ─── */
-
 .contact {
   padding-bottom: 96px;
 }
@@ -738,8 +709,6 @@ section {
   transform: rotate(-14deg) translateY(-6px);
 }
 
-/* ─── футер ─── */
-
 .footer {
   border-top: 1px solid var(--border);
   padding: 34px 0 30px;
@@ -748,12 +717,15 @@ section {
 
 .footer-wordmark {
   font-family: 'Unbounded', sans-serif;
-  font-weight: 700;
+  font-weight: 600;
   font-size: clamp(4rem, 15vw, 11rem);
   line-height: .95;
+  letter-spacing: .05em;
   text-align: center;
+  background: linear-gradient(180deg, rgba(255, 180, 84, .38), rgba(255, 107, 53, .12));
+  -webkit-background-clip: text;
+  background-clip: text;
   color: transparent;
-  -webkit-text-stroke: 1px rgba(255, 255, 255, .07);
   user-select: none;
   margin-bottom: 26px;
 }
@@ -786,8 +758,6 @@ section {
   background-size: 100% 1px;
 }
 
-/* ─── появление при скролле ─── */
-
 .reveal {
   opacity: 0;
   transform: translateY(24px);
@@ -810,8 +780,6 @@ section {
     scroll-behavior: auto;
   }
 }
-
-/* ─── адаптив ─── */
 
 @media (max-width: 960px) {
   .hero {
@@ -871,7 +839,6 @@ section {
     padding-top: 10px;
   }
 
-  /* на планшете шапка плотнее — ссылки и кнопка не наезжают на узких ширинах */
   .nav-inner {
     gap: 20px;
   }
@@ -895,7 +862,6 @@ section {
     padding: 12px 18px;
   }
 
-  /* меню больше не прячем — превращаем в выпадающую панель */
   .nav-links {
     display: none;
     position: absolute;
@@ -924,7 +890,6 @@ section {
     background-image: none;
   }
 
-  /* под открытой панелью фон шапки тоже непрозрачный */
   .nav.open {
     background: rgba(11, 10, 8, .97);
     border-bottom-color: var(--border);
@@ -966,23 +931,19 @@ section {
     display: none;
   }
 
-  /* ссылка на проект — полноценная зона нажатия */
   .project-link {
     padding: 10px 0;
   }
 
-  /* микролейбл не ниже 12px на маленьком экране */
   .meta-label {
     font-size: 12px;
   }
 
-  /* вордмарк не должен обрезаться по краям экрана */
   .footer-wordmark {
     font-size: clamp(2.6rem, 14.5vw, 4rem);
   }
 }
 
-/* остальные работы — компактный грид */
 .mini-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1003,7 +964,6 @@ section {
   transition: border-color .25s ease, transform .25s ease, background .25s ease;
 }
 
-/* превью-скриншот в карточках с живой версией */
 .mini-thumb {
   display: block;
   aspect-ratio: 16 / 9;
@@ -1034,7 +994,6 @@ section {
 
 .mini-name { font-weight: 600; font-size: 1.02rem; }
 
-/* имя + статус-чип в одну строку */
 .mini-head {
   display: flex;
   align-items: center;
