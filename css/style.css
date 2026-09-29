@@ -595,13 +595,29 @@ section {
   aspect-ratio: 16 / 10;
   border-radius: 18px;
   border: 1px solid var(--border);
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   font-family: 'Unbounded', sans-serif;
   font-size: 1.5rem;
   color: rgba(255, 255, 255, .24);
+  background: #14110d;
   transition: transform .3s cubic-bezier(.4, 0, .2, 1), border-color .3s ease, filter .3s ease, color .3s ease;
+}
+
+/* живые скриншоты проектов вместо текстовых заглушек */
+.project-visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform .5s cubic-bezier(.4, 0, .2, 1);
+}
+
+.project-row:hover .project-visual img {
+  transform: scale(1.03);
 }
 
 .project-row:hover .project-visual {
@@ -978,13 +994,36 @@ section {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  padding: 22px 20px;
+  padding: 18px 18px 20px;
   border: 1px solid var(--border);
   border-radius: 14px;
   background: var(--surface);
   color: inherit;
   text-decoration: none;
   transition: border-color .25s ease, transform .25s ease, background .25s ease;
+}
+
+/* превью-скриншот в карточках с живой версией */
+.mini-thumb {
+  display: block;
+  aspect-ratio: 16 / 9;
+  border-radius: 9px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  margin: -4px -4px 2px;
+}
+
+.mini-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top;
+  display: block;
+  transition: transform .45s cubic-bezier(.4, 0, .2, 1);
+}
+
+.mini-card:hover .mini-thumb img {
+  transform: scale(1.04);
 }
 
 .mini-card:hover {
