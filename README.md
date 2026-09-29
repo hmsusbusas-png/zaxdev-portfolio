@@ -1,60 +1,56 @@
-# zaxdev — portfolio
+# zaxdev-portfolio
 
-One-page portfolio site: dark theme, glassmorphism, no frameworks, no builders. Pure HTML/CSS/JS.
+Одностраничный сайт-портфолио: тёмная тема и glassmorphism, чистый HTML/CSS/JS. Без фреймворков и сборщиков — открывается как есть.
 
-**Live:** [hmsusbusas-png.github.io/zaxdev-portfolio](https://hmsusbusas-png.github.io/zaxdev-portfolio/)
+**Живой сайт:** [hmsusbusas-png.github.io/zaxdev-portfolio](https://hmsusbusas-png.github.io/zaxdev-portfolio/)
 
-## What's inside
+## Что на странице
 
-- **Hero** — asymmetric layout with status chip, quick facts column and a services marquee
-- **Services** — bento grid with cursor spotlight effect
-- **Projects** — four alternating rows with outlined index numbers plus a compact grid with the rest of the projects
-- **About** — short story + timeline
-- **Contact** — CTA with a hand-drawn arrow, magnetic button
+- Hero — асимметричная сетка, колонка фактов и бегущая строка услуг
+- Услуги — bento-сетка с прожектором, который следует за курсором
+- Проекты — четыре крупных ряда со скриншотами и компактная сетка остальных работ с живыми превью
+- Обо мне — короткая история и таймлайн
+- Контакты — CTA с рисованной стрелкой и магнитной кнопкой
 
-Details: film grain overlay (SVG turbulence), scroll reveal via IntersectionObserver,
-nav that hides on scroll down, custom selection/scrollbar, `prefers-reduced-motion` respected.
-Fonts: [Unbounded](https://fonts.google.com/specimen/Unbounded) + [Golos Text](https://fonts.google.com/specimen/Golos+Text), both with native Cyrillic.
+Сверху лёгкое «зерно» (SVG-шум), чтобы фон не выглядел пластиковым. Блоки появляются при скролле (IntersectionObserver), навигация прячется при скролле вниз, свои ::selection и скроллбар, уважается `prefers-reduced-motion`. Шрифты — [Unbounded](https://fonts.google.com/specimen/Unbounded) и [Golos Text](https://fonts.google.com/specimen/Golos+Text), оба с кириллицей.
 
-## Run
+## Скриншоты
 
-No build step. Either open `index.html` directly, or:
+![Главная, десктоп](screenshots/desktop.png)
+
+![Мобильная версия](screenshots/mobile.png)
+
+## Как запустить
+
+Сборка не нужна. Откройте `index.html` в браузере или поднимите любой статический сервер:
 
 ```bash
 python -m http.server 8000
 # → http://localhost:8000
 ```
 
-## Structure
+## Структура
 
 ```
-├── index.html      # markup, all sections
-├── css/style.css   # styles, plain CSS, no preprocessor
-├── js/main.js      # animations, no dependencies
+├── index.html        # вся разметка
+├── css/style.css     # стили, обычный CSS без препроцессора
+├── js/main.js        # анимации, без зависимостей
+├── img/projects/     # скриншоты проектов для страницы
+├── screenshots/      # скриншоты самого сайта
 └── favicon.svg
 ```
 
-## Contact
-
-Telegram: [@lev_backend](https://t.me/lev_backend) — open for orders.
+Связь: Telegram [@lev_backend](https://t.me/lev_backend).
 
 ---
 
-## RU
+<details>
+<summary>EN</summary>
 
-Одностраничный сайт-портфолио: тёмная тема, glassmorphism, без фреймворков и конструкторов.
+One-page portfolio site: dark theme, glassmorphism, plain HTML/CSS/JS. No frameworks, no build step — open `index.html` and it works.
 
-**Живой сайт:** [hmsusbusas-png.github.io/zaxdev-portfolio](https://hmsusbusas-png.github.io/zaxdev-portfolio/)
+**Live:** [hmsusbusas-png.github.io/zaxdev-portfolio](https://hmsusbusas-png.github.io/zaxdev-portfolio/)
 
-Внутри: hero с асимметричной сеткой и бегущей строкой услуг, bento-сетка услуг
-с прожектором за курсором, проекты чередующимися рядами, таймлайн, CTA с
-магнитной кнопкой и рисованной стрелкой. Сверху — лёгкое «зерно» (SVG-шум),
-чтобы фон не выглядел пластиковым.
+Orders: Telegram [@lev_backend](https://t.me/lev_backend).
 
-Анимации: появление блоков при скролле (IntersectionObserver), навигация
-прячется при скролле вниз, кастомные ::selection и скроллбар, уважается
-`prefers-reduced-motion`.
-
-Сборка не нужна — открой `index.html` или подними любой статический сервер.
-
-Связь: Telegram [@lev_backend](https://t.me/lev_backend) — открыт под заказы.
+</details>
