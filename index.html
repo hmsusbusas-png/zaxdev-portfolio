@@ -3,12 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>zaxdev — сайты, Telegram-боты, парсеры и интеграции с Claude</title>
-  <meta name="description" content="Делаю сайты, Telegram-ботов, парсеры и MCP-серверы, через которые Claude работает с CorelDRAW, 1С и Office. Работы с живыми демо и кодом на GitHub.">
+  <title>zaxdev — сайты, Telegram-боты, парсеры и автоматизация</title>
+  <meta name="description" content="Делаю сайты, Telegram-ботов, парсеры цен и автоматизацию рутины. Работы с живыми демо и кодом на GitHub.">
   <link rel="canonical" href="https://hmsusbusas-png.github.io/zaxdev-portfolio/">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="ru_RU">
-  <meta property="og:title" content="zaxdev — сайты, боты, парсеры, интеграции с Claude">
+  <meta property="og:title" content="zaxdev — сайты, боты, парсеры, автоматизация">
   <meta property="og:description" content="Работы с живыми демо и кодом на GitHub.">
   <meta property="og:url" content="https://hmsusbusas-png.github.io/zaxdev-portfolio/">
   <meta property="og:image" content="https://hmsusbusas-png.github.io/zaxdev-portfolio/og.jpg">
@@ -27,7 +27,7 @@
     <a class="logo" href="./">zaxdev</a>
     <nav class="nav" aria-label="Разделы">
       <a href="#raboty">Сайты</a>
-      <a href="#avtomatizaciya">Автоматизация и боты</a>
+      <a href="#avtomatizaciya">Боты и автоматизация</a>
       <a href="#uslugi">Услуги и сроки</a>
     </nav>
     <a class="top__tg" href="https://t.me/lev_backend">Telegram</a>
@@ -35,7 +35,7 @@
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <h1 id="hero-title">Делаю сайты, Telegram-ботов и&nbsp;интеграции, которые работают у&nbsp;заказчика, а&nbsp;не&nbsp;только в&nbsp;демо.</h1>
+      <h1 id="hero-title">Делаю сайты, Telegram-ботов и&nbsp;парсеры, которые работают у&nbsp;заказчика, а&nbsp;не&nbsp;только в&nbsp;демо.</h1>
       <div class="hero__side">
         <p>Пишу код сам, показываю его целиком: у каждой работы ниже есть живая версия и репозиторий. Отвечаю с 10 до 22 по Москве, обычно в течение часа.</p>
         <p class="hero__actions">
@@ -127,44 +127,24 @@
 
     <section class="auto" id="avtomatizaciya" aria-labelledby="auto-title">
       <div class="section-head">
-        <h2 id="auto-title">Автоматизация и боты</h2>
-        <p>MCP-серверы подключают Claude Desktop к программам на компьютере: он сам вызывает нужные инструменты и работает с файлами, а не только советует.</p>
+        <h2 id="auto-title">Боты и автоматизация</h2>
+        <p>Программы, которые работают без присмотра: следят, собирают, раскладывают и пишут в Telegram, когда что-то случилось.</p>
       </div>
       <ol class="auto__list">
         <li>
-          <h3>Claude рисует в CorelDRAW</h3>
-          <p>Пишете «сделай визитку 90×50 с логотипом слева» — Claude создаёт документ, фигуры, текст, импортирует картинки и выгружает в PDF, PNG или SVG. 15 инструментов через COM, работает с установленным CorelDRAW.</p>
-          <p class="auto__meta"><span>Python · MCP · COM</span><a href="https://github.com/hmsusbusas-png/mcp-corel">mcp-corel</a></p>
-        </li>
-        <li>
-          <h3>Claude читает 1С и ничего в ней не меняет</h3>
-          <p>Остатки, обороты, документы за период, справочники через OData. Записать ничего нельзя: клиент отбрасывает любой запрос кроме GET ещё до отправки.</p>
-          <p class="auto__meta"><span>Python · MCP · OData</span><a href="https://github.com/hmsusbusas-png/mcp-onec">mcp-onec</a></p>
-        </li>
-        <li>
-          <h3>Claude собирает документы Word, Excel и PowerPoint</h3>
-          <p>Отчёт из Markdown в docx, таблица с формулами и настоящей диаграммой Excel, презентация, экспорт в PDF через установленный Office. 21 инструмент.</p>
-          <p class="auto__meta"><span>Python · MCP</span><a href="https://github.com/hmsusbusas-png/mcp-office">mcp-office</a></p>
-        </li>
-        <li>
-          <h3>Claude ищет в интернете без ключей API</h3>
-          <p>Поиск, новости и картинки через DuckDuckGo, страницы отдаются чистым Markdown, до 20 страниц параллельно.</p>
-          <p class="auto__meta"><span>Python · MCP</span><a href="https://github.com/hmsusbusas-png/mcp-websearch">mcp-websearch</a></p>
-        </li>
-        <li>
-          <h3>Claude считает кристаллические структуры</h3>
-          <p>Симметрия, координация, порошковая дифрактограмма, поверхности по индексам Миллера, поиск в Crystallography Open Database и открытие в VESTA.</p>
-          <p class="auto__meta"><span>Python · MCP · pymatgen</span><a href="https://github.com/hmsusbusas-png/mcp-vesta">mcp-vesta</a></p>
-        </li>
-        <li>
           <h3>Цены на Wildberries и любом сайте</h3>
-          <p>Следит за товарами по артикулу WB или по CSS-селектору на странице магазина, хранит историю, строит графики, выгружает в Excel и пишет в Telegram, когда цена падает.</p>
-          <p class="auto__meta"><span>Python · SQLite · Telegram</span><a href="https://github.com/hmsusbusas-png/price-watch">price-watch</a></p>
+          <p>Следит за товарами по артикулу WB или по CSS-селектору на странице магазина, хранит историю, строит графики, выгружает в Excel и пишет в Telegram, когда цена падает. Работает как сервис в Docker.</p>
+          <p class="auto__meta"><span>Python · SQLite · Telegram · Docker</span><a href="https://github.com/hmsusbusas-png/price-watch">price-watch</a></p>
         </li>
         <li>
           <h3>Магазин в Telegram</h3>
-          <p>Каталог, корзина, оформление заказа с проверкой телефона, история заказов и уведомление администратору. Есть демо-режим без настоящих платежей.</p>
+          <p>Каталог, корзина, оформление заказа с проверкой телефона, уведомление администратору и смена статуса кнопкой. Есть демо-режим оплаты без настоящих денег.</p>
           <p class="auto__meta"><span>Python · aiogram 3 · SQLite</span><a href="https://github.com/hmsusbusas-png/tg-shop-bot">tg-shop-bot</a></p>
+        </li>
+        <li>
+          <h3>Порядок в папке «Загрузки»</h3>
+          <p>Раскладывает файлы по типу и дате. Сначала показывает план и ничего не трогает, каждое перемещение пишет в журнал, любой запуск откатывается одной командой.</p>
+          <p class="auto__meta"><span>Python · без зависимостей</span><a href="https://github.com/hmsusbusas-png/file-tidy">file-tidy</a></p>
         </li>
       </ol>
     </section>
@@ -178,7 +158,7 @@
         <div><dt>Лендинг или сайт-визитка</dt><dd>Тексты, вёрстка под телефон, форма заявки, публикация</dd><dd class="services__time">1–2 недели</dd></div>
         <div><dt>Telegram-бот</dt><dd>Заявки, каталог, оплата, уведомления, админка в самом боте</dd><dd class="services__time">от 5 дней</dd></div>
         <div><dt>Парсер или мониторинг цен</dt><dd>Сбор данных с сайтов, выгрузка в Excel или Google Таблицы, уведомления</dd><dd class="services__time">3–7 дней</dd></div>
-        <div><dt>Интеграция Claude с программой</dt><dd>MCP-сервер под вашу программу или базу: 1С, Office, графические редакторы</dd><dd class="services__time">1–2 недели</dd></div>
+        <div><dt>Автоматизация рутины</dt><dd>Скрипты для отчётов, выгрузок и обработки файлов, интеграции через API</dd><dd class="services__time">от 3 дней</dd></div>
         <div><dt>Доработка готового проекта</dt><dd>Исправить ошибки, ускорить, перенести на новый хостинг</dd><dd class="services__time">по объёму</dd></div>
       </dl>
       <p class="services__how">Как работаю: вы описываете задачу, я задаю вопросы и называю срок и цену. Предоплата половина, остальное после сдачи. Правки в течение двух недель после сдачи бесплатно.</p>
