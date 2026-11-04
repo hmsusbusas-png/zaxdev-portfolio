@@ -1,56 +1,39 @@
-# zaxdev-portfolio
+# zaxdev
 
-Одностраничный сайт-портфолио: тёмная тема и glassmorphism, чистый HTML/CSS/JS. Без фреймворков и сборщиков — открывается как есть.
+Personal portfolio: websites, Telegram bots, scrapers and MCP integrations for Claude.
 
-**Живой сайт:** [hmsusbusas-png.github.io/zaxdev-portfolio](https://hmsusbusas-png.github.io/zaxdev-portfolio/)
+Сайт-витрина: кто я, что делаю и как со мной связаться. На первом экране одна фраза и кнопка в Telegram, ниже работы с живыми превью, отдельный раздел про MCP-серверы и ботов, описанных через задачу, услуги со сроками.
+
+Сайт: https://hmsusbusas-png.github.io/zaxdev-portfolio/
+
+![Первый экран](docs/desktop.jpg)
+
+![Автоматизация и боты](docs/automation.jpg)
+
+<img src="docs/mobile.jpg" width="300" alt="Первый экран на телефоне">
 
 ## Что на странице
 
-- Hero — асимметричная сетка, колонка фактов и бегущая строка услуг
-- Услуги — bento-сетка с прожектором, который следует за курсором
-- Проекты — четыре крупных ряда со скриншотами и компактная сетка остальных работ (у живых сайтов — превью, у python-тулов — чип)
-- Обо мне — короткая история и таймлайн
-- Контакты — CTA с рисованной стрелкой и магнитной кнопкой
-
-Сверху лёгкое «зерно» (SVG-шум), чтобы фон не выглядел пластиковым. Блоки появляются при скролле (IntersectionObserver), навигация прячется при скролле вниз, свои ::selection и скроллбар, уважается `prefers-reduced-motion`. Шрифты — [Unbounded](https://fonts.google.com/specimen/Unbounded) и [Golos Text](https://fonts.google.com/specimen/Golos+Text), оба с кириллицей.
-
-## Скриншоты
-
-![Главная, десктоп](screenshots/desktop.png)
-
-![Мобильная версия](screenshots/mobile.png)
+- Первый экран: чем занимаюсь, кнопка «Написать в Telegram», ссылка на GitHub.
+- «Сейчас»: pulsewatch, мониторинг сайтов, со скриншотом интерфейса.
+- Пять сайтов: крупное превью в рамке браузера, одна строка о том, чем сайт интересен, ссылки на живую версию и на код.
+- «Автоматизация и боты»: пять MCP-серверов, трекер цен и магазин в Telegram, у каждого заголовок — задача, которую он решает.
+- Услуги и сроки без цен, порядок работы, контакт.
 
 ## Как запустить
 
-Сборка не нужна. Откройте `index.html` в браузере или поднимите любой статический сервер:
-
-```bash
+```sh
+git clone https://github.com/hmsusbusas-png/zaxdev-portfolio
+cd zaxdev-portfolio
 python -m http.server 8000
-# → http://localhost:8000
 ```
 
-## Структура
+## Как устроено
 
-```
-├── index.html        # вся разметка
-├── css/style.css     # стили, обычный CSS без препроцессора
-├── js/main.js        # анимации, без зависимостей
-├── img/projects/     # скриншоты проектов для страницы
-├── screenshots/      # скриншоты самого сайта
-└── favicon.svg
-```
+Один `index.html` и `css/style.css`, JavaScript нет. Шрифты Golos Text и JetBrains Mono локально в `fonts/`. Превью работ в `img/` — снимки первых экранов в AVIF и WebP, около 50 КБ каждое.
 
-Связь: Telegram [@lev_backend](https://t.me/lev_backend).
+Lighthouse (мобильный профиль): 100 по всем четырём пунктам. axe и html-validate без ошибок.
 
----
+## Лицензия
 
-<details>
-<summary>EN</summary>
-
-One-page portfolio site: dark theme, glassmorphism, plain HTML/CSS/JS. No frameworks, no build step — open `index.html` and it works.
-
-**Live:** [hmsusbusas-png.github.io/zaxdev-portfolio](https://hmsusbusas-png.github.io/zaxdev-portfolio/)
-
-Orders: Telegram [@lev_backend](https://t.me/lev_backend).
-
-</details>
+Код — MIT, см. [LICENSE](LICENSE).
