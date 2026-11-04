@@ -15,8 +15,9 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="theme-color" content="#f7f6f2">
+  <meta name="theme-color" content="#0e0b08">
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/unbounded-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="fonts/golos-text-normal-400-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
@@ -24,7 +25,7 @@
 <body>
   <a class="skip" href="#main">К содержанию</a>
   <header class="top">
-    <a class="logo" href="./">zaxdev</a>
+    <a class="logo" href="./">zaxdev<span>.</span></a>
     <nav class="nav" aria-label="Разделы">
       <a href="#raboty">Сайты</a>
       <a href="#avtomatizaciya">Боты и автоматизация</a>
@@ -35,19 +36,33 @@
 
   <main id="main">
     <section class="hero" aria-labelledby="hero-title">
-      <h1 id="hero-title">Делаю сайты, Telegram-ботов и&nbsp;инструменты для работы с&nbsp;данными.</h1>
-      <div class="hero__side">
-        <p>Здесь собраны мои проекты: сайты можно открыть в браузере, программы запустить из репозитория. Отвечаю с 10 до 22 по Москве, обычно в течение часа.</p>
+      <div>
+        <p class="chip">Беру новые заказы</p>
+        <h1 id="hero-title">Сайты, боты и&nbsp;парсеры <span class="grad">на&nbsp;заказ</span></h1>
+        <p class="hero__lead">Делаю лендинги, Telegram-ботов, парсеры маркетплейсов и скрипты, которые снимают рутину. Ниже мои проекты: сайты открываются в браузере, код лежит на GitHub.</p>
         <p class="hero__actions">
           <a class="button" href="https://t.me/lev_backend">Написать в Telegram</a>
-          <a class="link" href="https://github.com/hmsusbusas-png">GitHub</a>
+          <a class="ghost" href="#raboty">Смотреть работы ↓</a>
         </p>
       </div>
+      <dl class="facts">
+        <div><dt>Где</dt><dd>Москва, работаю удалённо</dd></div>
+        <div><dt>Стек</dt><dd>Python, JavaScript, HTML и CSS</dd></div>
+        <div><dt>Ответ</dt><dd>обычно в течение часа, с 10 до 22 по Москве</dd></div>
+        <div><dt>Сроки</dt><dd>от 3 дней до 2 недель</dd></div>
+      </dl>
     </section>
+
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <span>Лендинги</span><span>Telegram-боты</span><span>Парсеры</span><span>Мониторинг цен</span><span>Автоматизация</span><span>Интеграции через API</span>
+        <span>Лендинги</span><span>Telegram-боты</span><span>Парсеры</span><span>Мониторинг цен</span><span>Автоматизация</span><span>Интеграции через API</span>
+      </div>
+    </div>
 
     <section class="now" aria-labelledby="now-title">
       <div class="now__text">
-        <p class="label">Сейчас</p>
+        <p class="label">Сейчас делаю</p>
         <h2 id="now-title">Pulsewatch</h2>
         <p>Мониторинг сайтов, API и сертификатов из нескольких регионов. Инцидент открывается только после подтверждения сбоя большинством регионов, уведомления уходят в Telegram, почту и Slack, у каждого проекта есть публичная статус-страница.</p>
         <p class="now__stack">FastAPI · PostgreSQL · React · Docker</p>
@@ -61,7 +76,7 @@
 
     <section class="works" id="raboty" aria-labelledby="works-title">
       <div class="section-head">
-        <h2 id="works-title">Сайты</h2>
+        <div><p class="label">01 / сайты</p><h2 id="works-title">Сайты</h2></div>
         <p>Пять концептов для придуманных заказчиков, у каждого своё направление. Всё на HTML, CSS и немного JavaScript, Lighthouse 96-100.</p>
       </div>
       <article class="work">
@@ -128,7 +143,7 @@
 
     <section class="auto" id="avtomatizaciya" aria-labelledby="auto-title">
       <div class="section-head">
-        <h2 id="auto-title">Боты и автоматизация</h2>
+        <div><p class="label">02 / программы</p><h2 id="auto-title">Боты и автоматизация</h2></div>
         <p>Три небольших инструмента для магазина и работы с файлами.</p>
       </div>
       <ol class="auto__list">
@@ -152,7 +167,7 @@
 
     <section class="services" id="uslugi" aria-labelledby="services-title">
       <div class="section-head">
-        <h2 id="services-title">Услуги и сроки</h2>
+        <div><p class="label">03 / услуги</p><h2 id="services-title">Услуги и сроки</h2></div>
         <p>Прочитаю задачу, оценю объём работы и назову цену.</p>
       </div>
       <dl class="services__list">
@@ -166,12 +181,13 @@
     </section>
 
     <section class="contact" aria-labelledby="contact-title">
-      <h2 id="contact-title">Есть задача?</h2>
+      <h2 id="contact-title">Есть задача<span class="grad">?</span></h2>
       <p>Напишите в Telegram, что нужно сделать и к какому сроку. Можно без технического задания, разберёмся вместе.</p>
-      <p><a class="contact__tg" href="https://t.me/lev_backend">@lev_backend</a></p>
+      <p><a class="button" href="https://t.me/lev_backend">@lev_backend в Telegram</a></p>
     </section>
   </main>
 
+  <p class="wordmark" aria-hidden="true">zaxdev</p>
   <footer class="foot">
     <p>zaxdev, Москва</p>
     <p><a href="https://github.com/hmsusbusas-png">github.com/hmsusbusas-png</a></p>
