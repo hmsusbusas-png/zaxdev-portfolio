@@ -1,327 +1,200 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>zaxdev: сайты, боты, парсеры</title>
-  <meta name="description" content="Разрабатываю лендинги, Telegram-ботов, парсеры маркетплейсов и скрипты автоматизации. Быстро, без конструкторов, с правками.">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>zaxdev — сайты, Telegram-боты, парсеры и интеграции с Claude</title>
+  <meta name="description" content="Делаю сайты, Telegram-ботов, парсеры и MCP-серверы, через которые Claude работает с CorelDRAW, 1С и Office. Работы с живыми демо и кодом на GitHub.">
   <link rel="canonical" href="https://hmsusbusas-png.github.io/zaxdev-portfolio/">
   <meta property="og:type" content="website">
-  <meta property="og:title" content="zaxdev: сайты, боты, парсеры">
-  <meta property="og:description" content="Разрабатываю лендинги, Telegram-ботов, парсеры маркетплейсов и скрипты автоматизации. Быстро, без конструкторов, с правками.">
+  <meta property="og:locale" content="ru_RU">
+  <meta property="og:title" content="zaxdev — сайты, боты, парсеры, интеграции с Claude">
+  <meta property="og:description" content="Работы с живыми демо и кодом на GitHub.">
   <meta property="og:url" content="https://hmsusbusas-png.github.io/zaxdev-portfolio/">
-  <meta property="og:image" content="https://hmsusbusas-png.github.io/zaxdev-portfolio/screenshots/desktop.png">
+  <meta property="og:image" content="https://hmsusbusas-png.github.io/zaxdev-portfolio/og.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="zaxdev: сайты, боты, парсеры">
-  <meta name="twitter:description" content="Лендинги, Telegram-боты, парсеры и автоматизация под задачу.">
-  <meta name="twitter:image" content="https://hmsusbusas-png.github.io/zaxdev-portfolio/screenshots/desktop.png">
-  <link rel="icon" type="image/svg+xml" href="favicon.svg">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;500;600;700&family=Golos+Text:wght@400;500;600&display=swap" rel="stylesheet">
+  <meta name="theme-color" content="#f7f6f2">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="fonts/golos-text-normal-400-cyrillic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/fonts.css">
   <link rel="stylesheet" href="css/style.css">
-  <noscript>
-    <style>.reveal { opacity: 1 !important; transform: none !important; }</style>
-  </noscript>
 </head>
 <body>
-
-  <a class="skip-link" href="#main">Перейти к содержимому</a>
-
-  <header class="nav" id="nav">
-    <div class="container nav-inner">
-      <a href="#main" class="logo">zaxdev</a>
-      <nav class="nav-links" id="nav-menu" aria-label="Основная навигация">
-        <a href="#services">Услуги</a>
-        <a href="#projects">Проекты</a>
-        <a href="#about">Обо мне</a>
-        <a href="#contact">Контакты</a>
-      </nav>
-      <a href="https://t.me/lev_backend" class="nav-cta" target="_blank" rel="noopener">Обсудить задачу</a>
-      <button class="nav-burger" id="nav-burger" type="button" aria-expanded="false" aria-controls="nav-menu" aria-label="Открыть меню">
-        <span class="burger-line" aria-hidden="true"></span>
-        <span class="burger-line" aria-hidden="true"></span>
-      </button>
-    </div>
+  <a class="skip" href="#main">К содержанию</a>
+  <header class="top">
+    <a class="logo" href="./">zaxdev</a>
+    <nav class="nav" aria-label="Разделы">
+      <a href="#raboty">Сайты</a>
+      <a href="#avtomatizaciya">Автоматизация и боты</a>
+      <a href="#uslugi">Услуги и сроки</a>
+    </nav>
+    <a class="top__tg" href="https://t.me/lev_backend">Telegram</a>
   </header>
 
   <main id="main">
-    <section class="hero">
-      <div class="container hero-grid">
-        <div class="hero-main">
-          <div class="status-chip">
-            <span class="dot"></span>
-            открыт для заказов
-          </div>
-          <h1>Сайты, боты и&nbsp;парсеры <span class="grad-text">на&nbsp;заказ</span></h1>
-          <p class="hero-sub">
-            Делаю лендинги для бизнеса, Telegram-ботов, парсеры маркетплейсов
-            и скрипты автоматизации. Веду от постановки задачи до запуска без вашей головной боли.
-          </p>
-          <div class="hero-actions">
-            <a href="https://t.me/lev_backend" class="btn btn-primary" id="magnetic-btn" target="_blank" rel="noopener">Написать в Telegram</a>
-            <a href="#projects" class="btn btn-ghost">Смотреть проекты
-              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" aria-hidden="true"><path d="M7 1v11M2.5 7.5 7 12l4.5-4.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-          <svg class="hero-arrow" width="72" height="60" viewBox="0 0 72 60" fill="none" aria-hidden="true">
-            <path d="M6 4c14 10 30 26 38 44" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M36 40c3 3 6 6 8 8 1-4 2-8 4-11" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
-
-        <aside class="hero-meta">
-          <div class="meta-row">
-            <span class="meta-label">локация</span>
-            <span class="meta-value">Москва · удалённо по всему СНГ</span>
-          </div>
-          <div class="meta-row">
-            <span class="meta-label">стек</span>
-            <span class="meta-value">Python · JS · HTML/CSS</span>
-          </div>
-          <div class="meta-row">
-            <span class="meta-label">ответ</span>
-            <span class="meta-value">в течение часа, 10:00–22:00 МСК</span>
-          </div>
-          <div class="meta-row">
-            <span class="meta-label">срок</span>
-            <span class="meta-value">средний проект: 3–5 дней</span>
-          </div>
-        </aside>
-      </div>
-    </section>
-
-    <div class="marquee" aria-hidden="true">
-      <div class="marquee-track">
-        <span>лендинги ✦ telegram-боты ✦ парсеры ✦ автоматизация ✦ скрейперы ✦ скрипты ✦&nbsp;</span>
-        <span>лендинги ✦ telegram-боты ✦ парсеры ✦ автоматизация ✦ скрейперы ✦ скрипты ✦&nbsp;</span>
-      </div>
-    </div>
-    <section class="services" id="services">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-index">01 / услуги</span>
-          <h2>Что я делаю</h2>
-        </div>
-
-        <div class="bento">
-          <article class="bento-card span-7 reveal">
-            <div class="card-top">
-              <span class="card-num">01</span>
-              <svg class="card-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2.5" y="4" width="19" height="14" rx="2.5"/><path d="m6 9 3 3-3 3M12 15h5"/></svg>
-            </div>
-            <h3>Лендинги и сайты</h3>
-            <p>Продающие одностраничники и сайты-визитки: быстрые, адаптивные, без конструкторов и шаблонного мусора.</p>
-            <span class="card-price">от 8 000 ₽</span>
-          </article>
-
-          <article class="bento-card span-5 reveal">
-            <div class="card-top">
-              <span class="card-num">02</span>
-              <svg class="card-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21.5 11.8c0 4.5-4.3 8.2-9.5 8.2-1.1 0-2.2-.2-3.2-.5L3.5 21l1.6-4.1C3.8 15.6 3 13.8 3 11.8 3 7.3 7.3 3.5 12.5 3.5s9 3.8 9 8.3Z"/><path d="M8.5 10.5h7M8.5 13.5h4.5"/></svg>
-            </div>
-            <h3>Telegram-боты</h3>
-            <p>Магазины с каталогом и корзиной, уведомления и рассылки, мини-приложения. С админкой и подключением оплаты.</p>
-            <span class="card-price">от 5 000 ₽</span>
-          </article>
-
-          <article class="bento-card span-5 reveal">
-            <div class="card-top">
-              <span class="card-num">03</span>
-              <svg class="card-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="5.5" rx="8" ry="2.8"/><path d="M4 5.5v13c0 1.5 3.6 2.8 8 2.8s8-1.3 8-2.8v-13M4 12c0 1.5 3.6 2.8 8 2.8s8-1.3 8-2.8"/></svg>
-            </div>
-            <h3>Парсеры и скрейперы</h3>
-            <p>Цены и товары Wildberries, Ozon, Avito. Мониторинг конкурентов с уведомлениями об изменениях и выгрузкой в Excel или Google Sheets.</p>
-            <span class="card-price">от 3 000 ₽</span>
-          </article>
-
-          <article class="bento-card span-7 reveal">
-            <div class="card-top">
-              <span class="card-num">04</span>
-              <svg class="card-icon" width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2.5 4.5 13.5H11l-1 8 8.5-11H12l1-8Z"/></svg>
-            </div>
-            <h3>Автоматизация</h3>
-            <p>Скрипты, которые убивают рутину: массовая обработка файлов, отчёты, интеграции API, постинг в соцсети.</p>
-            <span class="card-price">от 2 000 ₽</span>
-          </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="projects" id="projects">
-      <div class="container">
-        <div class="section-head reveal">
-          <span class="section-index">02 / проекты</span>
-          <h2>Последние работы</h2>
-        </div>
-
-        <div class="project-row reveal">
-          <div class="project-info">
-            <span class="project-idx">01</span>
-            <h3>Кофейня «Утро»</h3>
-            <p>Концепт-лендинг для кофейни на Покровке: меню с ценами, галерея, карта и акция для постоянных гостей. Портфолиный проект, опубликован на GitHub Pages.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JS</span>
-            </div>
-            <a class="project-link" href="https://hmsusbusas-png.github.io/utro-coffee/" target="_blank" rel="noopener">Открыть сайт
-              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M2 11 11 2M4.5 2H11v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-          <div class="project-visual visual-a"><img src="img/projects/utro.jpg" alt="Скриншот лендинга кофейни «Утро»" loading="lazy" width="1200" height="750"></div>
-        </div>
-
-        <div class="project-row row-reverse reveal">
-          <div class="project-info">
-            <span class="project-idx">02</span>
-            <h3>Northlight</h3>
-            <p>Лендинг SaaS-платформы продуктовой аналитики: bento-сетка фич, интерактивный демо-блок с табами, переключатель тарифов, waitlist-форма. Светлый минимализм, много воздуха.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JS</span>
-            </div>
-            <a class="project-link" href="https://hmsusbusas-png.github.io/northlight/" target="_blank" rel="noopener">Открыть сайт
-              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M2 11 11 2M4.5 2H11v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-          <div class="project-visual visual-b"><img src="img/projects/northlight.jpg" alt="Скриншот лендинга Northlight" loading="lazy" width="1200" height="750"></div>
-        </div>
-
-        <div class="project-row reveal">
-          <div class="project-info">
-            <span class="project-idx">03</span>
-            <h3>ШУМ: digital-агентство</h3>
-            <p>Сайт агентства в нео-брутализме: маркер-акценты в типографике, жёсткие тени, marquee-строки, аккордеон услуг с ценами и форма заявки с живой валидацией.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JS</span>
-            </div>
-            <a class="project-link" href="https://hmsusbusas-png.github.io/shum-agency/" target="_blank" rel="noopener">Открыть сайт
-              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M2 11 11 2M4.5 2H11v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-          <div class="project-visual visual-c"><img src="img/projects/shum.jpg" alt="Скриншот сайта агентства ШУМ" loading="lazy" width="1200" height="750"></div>
-        </div>
-
-        <div class="project-row row-reverse reveal">
-          <div class="project-info">
-            <span class="project-idx">04</span>
-            <h3>ФОРМА: фитнес-клуб</h3>
-            <p>Сайт сети фитнес-клубов: расписание занятий по дням с табами, тарифы, счётчики и запись на пробную тренировку. Тёмная тема с неоновыми акцентами.</p>
-            <div class="project-tags">
-              <span>HTML</span><span>CSS</span><span>JS</span>
-            </div>
-            <a class="project-link" href="https://hmsusbusas-png.github.io/forma-fitness/" target="_blank" rel="noopener">Открыть сайт
-              <svg width="13" height="13" viewBox="0 0 13 13" fill="none" aria-hidden="true"><path d="M2 11 11 2M4.5 2H11v6.5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </a>
-          </div>
-          <div class="project-visual visual-a"><img src="img/projects/forma.jpg" alt="Скриншот сайта сети фитнес-клубов ФОРМА" loading="lazy" width="1200" height="750"></div>
-        </div>
-
-        <div class="mini-grid reveal">
-          <a class="mini-card" href="https://hmsusbusas-png.github.io/marta-berg/" target="_blank" rel="noopener">
-            <span class="mini-thumb"><img src="img/projects/marta.jpg" alt="Скриншот портфолио фотографа Marta Berg" loading="lazy" width="1200" height="750"></span>
-            <span class="mini-head"><span class="mini-name">Marta Berg</span><span class="mini-chip chip-live">live</span></span>
-            <span class="mini-desc">Портфолио фотографа: masonry-галерея с лайтбоксом, услуги и запись на съёмку</span>
-            <span class="mini-tag">HTML / CSS / JS</span>
-          </a>
-          <a class="mini-card" href="https://hmsusbusas-png.github.io/metrics-dashboard/" target="_blank" rel="noopener">
-            <span class="mini-thumb"><img src="img/projects/dashboard.jpg" alt="Скриншот дашборда продаж" loading="lazy" width="1200" height="750"></span>
-            <span class="mini-head"><span class="mini-name">Sales Dashboard</span><span class="mini-chip chip-live">live</span></span>
-            <span class="mini-desc">Дашборд продаж: графики Chart.js, фильтры периодов, тёмная и светлая тема, экспорт CSV</span>
-            <span class="mini-tag">JS + Chart.js</span>
-          </a>
-          <a class="mini-card" href="https://github.com/hmsusbusas-png/wb-price-tracker" target="_blank" rel="noopener">
-            <span class="mini-head"><span class="mini-name">wb-price-tracker</span><span class="mini-chip chip-py">python</span></span>
-            <span class="mini-desc">Мониторинг цен Wildberries: поиск, графики динамики, выгрузка в Excel</span>
-            <span class="mini-tag">Python</span>
-          </a>
-          <a class="mini-card" href="https://github.com/hmsusbusas-png/tg-shop-bot" target="_blank" rel="noopener">
-            <span class="mini-head"><span class="mini-name">tg-shop-bot</span><span class="mini-chip chip-py">python</span></span>
-            <span class="mini-desc">Магазин настольных игр в Telegram: каталог, корзина, оформление заказа в SQLite</span>
-            <span class="mini-tag">Python + aiogram 3</span>
-          </a>
-          <a class="mini-card" href="https://github.com/hmsusbusas-png/price-watch" target="_blank" rel="noopener">
-            <span class="mini-head"><span class="mini-name">price-watch</span><span class="mini-chip chip-py">python</span></span>
-            <span class="mini-desc">Слежение за ценами с алертами в Telegram: Wildberries и любой сайт по селектору</span>
-            <span class="mini-tag">Python</span>
-          </a>
-          <a class="mini-card" href="https://github.com/hmsusbusas-png/file-tidy" target="_blank" rel="noopener">
-            <span class="mini-head"><span class="mini-name">file-tidy</span><span class="mini-chip chip-py">python</span></span>
-            <span class="mini-desc">CLI-органайзер файлов по типам и датам: dry-run по умолчанию, откат через undo</span>
-            <span class="mini-tag">Python</span>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section class="about" id="about">
-      <div class="container about-grid">
-        <div class="reveal">
-          <div class="section-head">
-            <span class="section-index">03 / обо мне</span>
-          </div>
-          <h2 class="about-title">Пишу код сам, <span class="grad-text">отвечаю за результат</span></h2>
-          <p class="about-text">
-            Путь начал с низкоуровневой разработки и разбирался, как программы
-            устроены изнутри, а не только как выглядят снаружи. Поэтому мои
-            парсеры не отваливаются от первой же смены вёрстки, а боты не
-            падают от неожиданного сообщения.
-          </p>
-          <p class="about-text">
-            Работаю просто: сначала обсуждаем задачу и фиксируем сроки,
-            потом предоплата 50%, потом работа. Правки в течение двух недель
-            после сдачи бесплатно.
-          </p>
-        </div>
-
-        <div class="about-timeline reveal">
-          <div class="tl-row">
-            <span class="tl-year">2024</span>
-            <span class="tl-what">первые строчки кода, реверс-инжиниринг и работа с памятью процессов</span>
-          </div>
-          <div class="tl-row">
-            <span class="tl-year">2025</span>
-            <span class="tl-what">переход к вебу и Python: первые боты и парсеры под реальные задачи</span>
-          </div>
-          <div class="tl-row">
-            <span class="tl-year">2026</span>
-            <span class="tl-what">полный цикл: от идеи и дизайна до деплоя и поддержки</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <div class="container contact-inner reveal">
-        <h2 class="contact-title">Есть задача<span class="grad-text">?</span></h2>
-        <p class="contact-sub">
-          Напишите в Telegram. Обсудим задачу, сроки и цену.
-          Отвечаю в течение часа, с 10:00 до 22:00 МСК.
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title">Делаю сайты, Telegram-ботов и&nbsp;интеграции, которые работают у&nbsp;заказчика, а&nbsp;не&nbsp;только в&nbsp;демо.</h1>
+      <div class="hero__side">
+        <p>Пишу код сам, показываю его целиком: у каждой работы ниже есть живая версия и репозиторий. Отвечаю с 10 до 22 по Москве, обычно в течение часа.</p>
+        <p class="hero__actions">
+          <a class="button" href="https://t.me/lev_backend">Написать в Telegram</a>
+          <a class="link" href="https://github.com/hmsusbusas-png">GitHub</a>
         </p>
-        <div class="contact-actions">
-          <a href="https://t.me/lev_backend" class="btn btn-primary btn-big" target="_blank" rel="noopener">
-            <svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M21.9 4.6 18.9 19c-.2 1-.8 1.3-1.7.8l-4.6-3.4-2.2 2.1c-.3.3-.5.5-1 .5l.4-4.8L18.5 6c.4-.3-.1-.5-.6-.2L7.1 12.4l-4.5-1.4c-1-.3-1-1 .2-1.4L20.6 3.2c.8-.3 1.5.2 1.3 1.4Z"/></svg>
-            @lev_backend
-          </a>
-          <svg class="contact-arrow" width="64" height="54" viewBox="0 0 64 54" fill="none" aria-hidden="true">
-            <path d="M58 4C44 10 24 24 14 46" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-            <path d="M12 36c0 4 .5 8 2 10 2-3 5-6 8-8" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          </svg>
-        </div>
       </div>
     </section>
 
-    <footer class="footer">
-      <div class="container">
-        <div class="footer-wordmark" aria-hidden="true">zaxdev</div>
-        <div class="footer-row">
-          <span>© 2026 zaxdev · сделано руками, без конструкторов</span>
-          <div class="footer-links">
-            <a href="https://t.me/lev_backend" target="_blank" rel="noopener">Telegram</a>
-            <a href="https://github.com/hmsusbusas-png" target="_blank" rel="noopener">GitHub</a>
-          </div>
-        </div>
+    <section class="now" aria-labelledby="now-title">
+      <div class="now__text">
+        <p class="label">Сейчас</p>
+        <h2 id="now-title">Pulsewatch</h2>
+        <p>Мониторинг сайтов, API и сертификатов из нескольких регионов. Инцидент открывается только после подтверждения сбоя большинством регионов, уведомления уходят в Telegram, почту и Slack, у каждого проекта есть публичная статус-страница.</p>
+        <p class="now__stack">FastAPI · PostgreSQL · React · Docker</p>
       </div>
-    </footer>
+      <figure class="now__shot">
+        <span class="work__bar" aria-hidden="true"><i></i><i></i><i></i><span>pulsewatch</span></span>
+        <picture><source type="image/avif" srcset="img/pulsewatch-720.avif 720w, img/pulsewatch-1200.avif 1200w" sizes="(min-width: 1000px) 560px, 100vw"><img src="img/pulsewatch-720.webp" srcset="img/pulsewatch-720.webp 720w, img/pulsewatch-1200.webp 1200w" sizes="(min-width: 1000px) 560px, 100vw" width="1200" height="750" alt="Экран монитора в pulsewatch: аптайм 99,99 %, график отклика за неделю, этапы запроса и регионы" fetchpriority="high" decoding="async"></picture>
+      </figure>
+    </section>
+
+    <section class="works" id="raboty" aria-labelledby="works-title">
+      <div class="section-head">
+        <h2 id="works-title">Сайты</h2>
+        <p>Пять концептов для придуманных заказчиков, у каждого своё направление. Всё на HTML, CSS и немного JavaScript, Lighthouse 96–100.</p>
+      </div>
+      <article class="work">
+        <a class="work__shot" href="https://hmsusbusas-png.github.io/marta-berg/" tabindex="-1" aria-hidden="true">
+          <span class="work__bar"><i></i><i></i><i></i><span>marta-berg</span></span>
+          <picture><source type="image/avif" srcset="img/marta-berg-720.avif 720w, img/marta-berg-1200.avif 1200w" sizes="(min-width: 1000px) 560px, 100vw"><img src="img/marta-berg-720.webp" srcset="img/marta-berg-720.webp 720w, img/marta-berg-1200.webp 1200w" sizes="(min-width: 1000px) 560px, 100vw" width="1200" height="750" alt="Первый экран сайта фотографа: заголовок «Фотограф архитектуры. Петербург.» и вертикальный ч/б кадр лестницы" loading="lazy" decoding="async"></picture>
+        </a>
+        <div class="work__text">
+          <p class="work__kind">Сайт фотографа архитектуры</p>
+          <h3>Марта Берг</h3>
+          <p>Три серии снимков Петербурга, подписи как в каталоге выставки, просмотр в полный размер. Интерфейса почти не видно, главное — кадры.</p>
+          <p class="work__links"><a href="https://hmsusbusas-png.github.io/marta-berg/">Открыть сайт</a><a href="https://github.com/hmsusbusas-png/marta-berg">Код</a></p>
+        </div>
+      </article>
+      <article class="work">
+        <a class="work__shot" href="https://hmsusbusas-png.github.io/utro-coffee/" tabindex="-1" aria-hidden="true">
+          <span class="work__bar"><i></i><i></i><i></i><span>utro-coffee</span></span>
+          <picture><source type="image/avif" srcset="img/utro-coffee-720.avif 720w, img/utro-coffee-1200.avif 1200w" sizes="(min-width: 1000px) 560px, 100vw"><img src="img/utro-coffee-720.webp" srcset="img/utro-coffee-720.webp 720w, img/utro-coffee-1200.webp 1200w" sizes="(min-width: 1000px) 560px, 100vw" width="1200" height="750" alt="Первый экран сайта кофейни: заголовок про 7:30 и фото капучино сверху" loading="lazy" decoding="async"></picture>
+        </a>
+        <div class="work__text">
+          <p class="work__kind">Лендинг кофейни</p>
+          <h3>Утро</h3>
+          <p>Меню свёрстано как печатный лист, табличка с часами пишет, открыто ли сейчас, вместо виджета карт — нарисованная схема квартала.</p>
+          <p class="work__links"><a href="https://hmsusbusas-png.github.io/utro-coffee/">Открыть сайт</a><a href="https://github.com/hmsusbusas-png/utro-coffee">Код</a></p>
+        </div>
+      </article>
+      <article class="work">
+        <a class="work__shot" href="https://hmsusbusas-png.github.io/forma-fitness/" tabindex="-1" aria-hidden="true">
+          <span class="work__bar"><i></i><i></i><i></i><span>forma-fitness</span></span>
+          <picture><source type="image/avif" srcset="img/forma-fitness-720.avif 720w, img/forma-fitness-1200.avif 1200w" sizes="(min-width: 1000px) 560px, 100vw"><img src="img/forma-fitness-720.webp" srcset="img/forma-fitness-720.webp 720w, img/forma-fitness-1200.webp 1200w" sizes="(min-width: 1000px) 560px, 100vw" width="1200" height="750" alt="Первый экран сайта фитнес-клуба: заголовок и чёрное табло с ближайшим занятием" loading="lazy" decoding="async"></picture>
+        </a>
+        <div class="work__text">
+          <p class="work__kind">Сайт фитнес-клуба</p>
+          <h3>Форма</h3>
+          <p>Расписание на неделю открывается на сегодняшнем дне, фильтруется по залу, табло показывает ближайшее занятие.</p>
+          <p class="work__links"><a href="https://hmsusbusas-png.github.io/forma-fitness/">Открыть сайт</a><a href="https://github.com/hmsusbusas-png/forma-fitness">Код</a></p>
+        </div>
+      </article>
+      <article class="work">
+        <a class="work__shot" href="https://hmsusbusas-png.github.io/shum-agency/" tabindex="-1" aria-hidden="true">
+          <span class="work__bar"><i></i><i></i><i></i><span>shum-agency</span></span>
+          <picture><source type="image/avif" srcset="img/shum-agency-720.avif 720w, img/shum-agency-1200.avif 1200w" sizes="(min-width: 1000px) 560px, 100vw"><img src="img/shum-agency-720.webp" srcset="img/shum-agency-720.webp 720w, img/shum-agency-1200.webp 1200w" sizes="(min-width: 1000px) 560px, 100vw" width="1200" height="750" alt="Первый экран сайта агентства: огромное слово ШУМ и оранжевая плашка с описанием" loading="lazy" decoding="async"></picture>
+        </a>
+        <div class="work__text">
+          <p class="work__kind">Сайт агентства</p>
+          <h3>ШУМ</h3>
+          <p>Крупная типографика и плакаты на CSS вместо выдуманных кейсов. Единственный проект, где можно было позволить себе дерзость.</p>
+          <p class="work__links"><a href="https://hmsusbusas-png.github.io/shum-agency/">Открыть сайт</a><a href="https://github.com/hmsusbusas-png/shum-agency">Код</a></p>
+        </div>
+      </article>
+      <article class="work">
+        <a class="work__shot" href="https://hmsusbusas-png.github.io/northlight/" tabindex="-1" aria-hidden="true">
+          <span class="work__bar"><i></i><i></i><i></i><span>northlight</span></span>
+          <picture><source type="image/avif" srcset="img/northlight-720.avif 720w, img/northlight-1200.avif 1200w" sizes="(min-width: 1000px) 560px, 100vw"><img src="img/northlight-720.webp" srcset="img/northlight-720.webp 720w, img/northlight-1200.webp 1200w" sizes="(min-width: 1000px) 560px, 100vw" width="1200" height="750" alt="Первый экран лендинга аналитики: заголовок и окно приложения с воронкой" loading="lazy" decoding="async"></picture>
+        </a>
+        <div class="work__text">
+          <p class="work__kind">Лендинг SaaS-сервиса</p>
+          <h3>Northlight</h3>
+          <p>Экраны продукта свёрстаны вручную: воронка, когорты удержания, живая лента событий. Тарифы таблицей и FAQ.</p>
+          <p class="work__links"><a href="https://hmsusbusas-png.github.io/northlight/">Открыть сайт</a><a href="https://github.com/hmsusbusas-png/northlight">Код</a></p>
+        </div>
+      </article>
+    </section>
+
+    <section class="auto" id="avtomatizaciya" aria-labelledby="auto-title">
+      <div class="section-head">
+        <h2 id="auto-title">Автоматизация и боты</h2>
+        <p>MCP-серверы подключают Claude Desktop к программам на компьютере: он сам вызывает нужные инструменты и работает с файлами, а не только советует.</p>
+      </div>
+      <ol class="auto__list">
+        <li>
+          <h3>Claude рисует в CorelDRAW</h3>
+          <p>Пишете «сделай визитку 90×50 с логотипом слева» — Claude создаёт документ, фигуры, текст, импортирует картинки и выгружает в PDF, PNG или SVG. 15 инструментов через COM, работает с установленным CorelDRAW.</p>
+          <p class="auto__meta"><span>Python · MCP · COM</span><a href="https://github.com/hmsusbusas-png/mcp-corel">mcp-corel</a></p>
+        </li>
+        <li>
+          <h3>Claude читает 1С и ничего в ней не меняет</h3>
+          <p>Остатки, обороты, документы за период, справочники через OData. Записать ничего нельзя: клиент отбрасывает любой запрос кроме GET ещё до отправки.</p>
+          <p class="auto__meta"><span>Python · MCP · OData</span><a href="https://github.com/hmsusbusas-png/mcp-onec">mcp-onec</a></p>
+        </li>
+        <li>
+          <h3>Claude собирает документы Word, Excel и PowerPoint</h3>
+          <p>Отчёт из Markdown в docx, таблица с формулами и настоящей диаграммой Excel, презентация, экспорт в PDF через установленный Office. 21 инструмент.</p>
+          <p class="auto__meta"><span>Python · MCP</span><a href="https://github.com/hmsusbusas-png/mcp-office">mcp-office</a></p>
+        </li>
+        <li>
+          <h3>Claude ищет в интернете без ключей API</h3>
+          <p>Поиск, новости и картинки через DuckDuckGo, страницы отдаются чистым Markdown, до 20 страниц параллельно.</p>
+          <p class="auto__meta"><span>Python · MCP</span><a href="https://github.com/hmsusbusas-png/mcp-websearch">mcp-websearch</a></p>
+        </li>
+        <li>
+          <h3>Claude считает кристаллические структуры</h3>
+          <p>Симметрия, координация, порошковая дифрактограмма, поверхности по индексам Миллера, поиск в Crystallography Open Database и открытие в VESTA.</p>
+          <p class="auto__meta"><span>Python · MCP · pymatgen</span><a href="https://github.com/hmsusbusas-png/mcp-vesta">mcp-vesta</a></p>
+        </li>
+        <li>
+          <h3>Цены на Wildberries и любом сайте</h3>
+          <p>Следит за товарами по артикулу WB или по CSS-селектору на странице магазина, хранит историю, строит графики, выгружает в Excel и пишет в Telegram, когда цена падает.</p>
+          <p class="auto__meta"><span>Python · SQLite · Telegram</span><a href="https://github.com/hmsusbusas-png/price-watch">price-watch</a></p>
+        </li>
+        <li>
+          <h3>Магазин в Telegram</h3>
+          <p>Каталог, корзина, оформление заказа с проверкой телефона, история заказов и уведомление администратору. Есть демо-режим без настоящих платежей.</p>
+          <p class="auto__meta"><span>Python · aiogram 3 · SQLite</span><a href="https://github.com/hmsusbusas-png/tg-shop-bot">tg-shop-bot</a></p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="services" id="uslugi" aria-labelledby="services-title">
+      <div class="section-head">
+        <h2 id="services-title">Услуги и сроки</h2>
+        <p>Цену называю после того, как прочитаю задачу: она зависит от объёма, а не от названия услуги.</p>
+      </div>
+      <dl class="services__list">
+        <div><dt>Лендинг или сайт-визитка</dt><dd>Тексты, вёрстка под телефон, форма заявки, публикация</dd><dd class="services__time">1–2 недели</dd></div>
+        <div><dt>Telegram-бот</dt><dd>Заявки, каталог, оплата, уведомления, админка в самом боте</dd><dd class="services__time">от 5 дней</dd></div>
+        <div><dt>Парсер или мониторинг цен</dt><dd>Сбор данных с сайтов, выгрузка в Excel или Google Таблицы, уведомления</dd><dd class="services__time">3–7 дней</dd></div>
+        <div><dt>Интеграция Claude с программой</dt><dd>MCP-сервер под вашу программу или базу: 1С, Office, графические редакторы</dd><dd class="services__time">1–2 недели</dd></div>
+        <div><dt>Доработка готового проекта</dt><dd>Исправить ошибки, ускорить, перенести на новый хостинг</dd><dd class="services__time">по объёму</dd></div>
+      </dl>
+      <p class="services__how">Как работаю: вы описываете задачу, я задаю вопросы и называю срок и цену. Предоплата половина, остальное после сдачи. Правки в течение двух недель после сдачи бесплатно.</p>
+    </section>
+
+    <section class="contact" aria-labelledby="contact-title">
+      <h2 id="contact-title">Есть задача?</h2>
+      <p>Напишите в Telegram, что нужно сделать и к какому сроку. Можно без технического задания, разберёмся вместе.</p>
+      <p><a class="contact__tg" href="https://t.me/lev_backend">@lev_backend</a></p>
+    </section>
   </main>
 
-  <script src="js/main.js"></script>
+  <footer class="foot">
+    <p>zaxdev, Москва</p>
+    <p><a href="https://github.com/hmsusbusas-png">github.com/hmsusbusas-png</a></p>
+    <p><a href="https://github.com/hmsusbusas-png/zaxdev-portfolio">Код этого сайта</a></p>
+  </footer>
 </body>
 </html>
