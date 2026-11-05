@@ -15,6 +15,7 @@ jobs:
           node-version: 22.23.4
       - run: npm install --no-save --package-lock=false --ignore-scripts @playwright/test@1.64.1
       - run: npx playwright install --with-deps chromium
+      - run: node scripts/wait-for-pages.mjs
       - run: node scripts/verify.mjs
         env:
           PORTFOLIO_BASE_URL: https://zaxdevv.github.io/zaxdev-portfolio/
