@@ -1,0 +1,27 @@
+name: Verify published portfolio
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  browser:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020
+        with:
+          node-version: 22.23.4
+      - run: npm install --no-save --package-lock=false --ignore-scripts @playwright/test@1.64.1
+      - run: npx playwright install --with-deps chromium
+      - run: node scripts/verify.mjs
+        env:
+          PORTFOLIO_BASE_URL: https://zaxdevv.github.io/zaxdev-portfolio/
+          PORTFOLIO_CHECK_OUTPUT: output/published
+          VERIFY_EXTERNAL_LINKS: "true"
+      - uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        if: always()
+        with:
+          name: published-portfolio-desktop-mobile
+          path: output/published/
