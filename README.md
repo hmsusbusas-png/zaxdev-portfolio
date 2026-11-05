@@ -4,7 +4,7 @@ Personal portfolio: websites, Telegram bots, scrapers and automation.
 
 Сайт-витрина: кто я, что делаю и как со мной связаться. На первом экране одна фраза и кнопка в Telegram, ниже работы с живыми превью, отдельный раздел про ботов и автоматизацию, описанных через задачу, услуги со сроками.
 
-Сайт: https://hmsusbusas-png.github.io/zaxdev-portfolio/
+Сайт: https://zaxdevv.github.io/zaxdev-portfolio/
 
 ![Первый экран](docs/desktop.jpg)
 
@@ -23,7 +23,7 @@ Personal portfolio: websites, Telegram bots, scrapers and automation.
 ## Как запустить
 
 ```sh
-git clone https://github.com/hmsusbusas-png/zaxdev-portfolio
+git clone https://github.com/zaxdevv/zaxdev-portfolio
 cd zaxdev-portfolio
 python -m http.server 8000
 ```
