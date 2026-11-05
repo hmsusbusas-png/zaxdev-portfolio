@@ -167,6 +167,12 @@ main { max-width: var(--max); margin: 0 auto; padding: 0 var(--pad); }
 }
 .auto__list li:hover { border-color: rgba(255, 180, 84, 0.4); transform: translateY(-3px); }
 .auto__list li::before { content: counter(task, decimal-leading-zero); font: 400 0.8rem/1 var(--mono); color: var(--accent); }
+.leadmind-case { padding-top: 32px; margin-bottom: 32px; }
+.leadmind-case .work__shot { margin: 0; }
+.leadmind-case .work__text::before { display: none; }
+.leadmind-case__features { padding-left: 20px; margin: 0 0 18px; color: #cfc7bb; }
+.leadmind-case__features li + li { margin-top: 6px; }
+.leadmind-case__note { color: var(--muted); font-size: 0.9rem; }
 .auto__list h3 { font-size: 1.15rem; line-height: 1.3; }
 .auto__list p { margin: 0; color: #cfc7bb; font-size: 0.98rem; }
 .auto__meta { margin-top: auto !important; padding-top: 10px; display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; font: 400 0.8rem/1.5 var(--mono); color: var(--muted) !important; }
